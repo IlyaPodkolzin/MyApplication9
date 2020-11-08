@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="60dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <Button
+            android:id="@+id/multiple"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/minus"
+            android:layout_toEndOf="@id/minus"
+            android:layout_toRightOf="@id/minus"
+            android:onClick="Action"
+            android:text="@string/multiple"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toEndOf="@id/minus"
+            android:layout_toRightOf="@id/minus"
+            android:onClick="Action"
+            android:text="@string/plus"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/divide"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@id/minus"
+            android:onClick="Action"
+            android:text="@string/divide"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:onClick="Action"
+            android:text="@string/minus"
+            android:textSize="72sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</LinearLayout>
